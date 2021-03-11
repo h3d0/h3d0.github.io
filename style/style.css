@@ -35,6 +35,12 @@ em {
   position: relative;
 }
 
+@media screen and (max-width: 959px) {
+  .header {
+    background-image: url("/images/banner-m.jpg");
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header {
     background-image: url("/images/banner-1200.jpg");
@@ -57,9 +63,23 @@ em {
   position: absolute;
 }
 
+@media screen and (max-width: 959px) {
+  .header .header__title {
+    bottom: -6px;
+    left: 4px;
+    font-size: 24px;
+  }
+}
+
 .header .header__title .title__name {
   font-size: 72px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 959px) {
+  .header .header__title .title__name {
+    font-size: 36px;
+  }
 }
 
 .section {
@@ -68,7 +88,7 @@ em {
 
 @media screen and (max-width: 959px) {
   .section {
-    padding: 48px 0;
+    padding: 48px 0 0 0;
   }
 }
 
@@ -95,6 +115,13 @@ em {
 
 .section.section--greeting .section__content {
   display: block;
+}
+
+@media screen and (max-width: 959px) {
+  .section.section--greeting .section__content {
+    font-size: 22px;
+    padding: 0 16px;
+  }
 }
 
 .section .section__content {
@@ -160,6 +187,7 @@ em {
 @media screen and (max-width: 959px) {
   .section .section__faq {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 
@@ -196,14 +224,15 @@ em {
 .section .section__faq .faq__cell .cell__answer {
   color: white;
   line-height: 1.6;
-  padding: 16px 32px;
+  padding: 32px;
 }
 
 @media screen and (max-width: 959px) {
   .section .section__faq .faq__cell .cell__answer {
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 0;
-    padding: 16px;
+    padding: 32px 16px;
   }
 }
 
@@ -217,6 +246,7 @@ em {
 @media screen and (max-width: 959px) {
   .news {
     grid-template-columns: 1fr;
+    padding: 0 16px;
   }
 }
 
@@ -227,11 +257,25 @@ em {
   padding-bottom: 16px;
 }
 
+@media screen and (max-width: 959px) {
+  .news .news__item {
+    border-bottom: 3px dotted #d43b00;
+  }
+}
+
 .how-it-works {
   display: flex;
   gap: 64px;
   justify-content: space-between;
   margin-top: 32px;
+}
+
+@media screen and (max-width: 959px) {
+  .how-it-works {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
 }
 
 .how-it-works .how-it-works__step {
@@ -249,4 +293,25 @@ em {
   color: white;
   padding: 32px 8px 32px 8px;
   text-align: center;
+}
+
+.how-it-works .how-it-works__step .step__image {
+  border-radius: 100%;
+}
+
+.how-it-works .how-it-works__step .step__text {
+  border-radius: 100%;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 959px) {
+  .how-it-works .how-it-works__step.how-it-works__step--hide-handset {
+    display: none;
+  }
+}
+
+.how-it-works .how-it-works__step .step__num {
+  color: #d43b00;
+  font-size: 18px;
+  font-weight: bold;
 }
