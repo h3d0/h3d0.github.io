@@ -315,3 +315,28 @@ em {
   font-size: 18px;
   font-weight: bold;
 }
+
+.rate {
+  display: flex;
+  gap: 64px;
+  margin-top: 32px;
+}
+
+.rate .rate__image {
+  flex-basis: 300px;
+}
+
+.rate .rate__items {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  gap: 8px;
+}
+
+.rate .rate__items.rate__items--reversed {
+  order: -1;
+}
+
+.rate .rate__items .items__item {
+  line-height: 1.4;
+}
