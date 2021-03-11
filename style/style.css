@@ -2,6 +2,7 @@ html,
 body {
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
@@ -20,7 +21,7 @@ em {
 }
 
 .warning {
-  color: #ec810c;
+  color: #d43b00;
   text-transform: uppercase;
 }
 
@@ -29,9 +30,15 @@ em {
   background-image: url("/images/banner.jpg");
   background-position: center 60%;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   min-height: 400px;
   position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    background-image: url("/images/banner-1200.jpg");
+  }
 }
 
 .header .header__fade {
@@ -70,6 +77,20 @@ em {
   font-size: 24px;
   line-height: 1.4;
   padding: 32px 0;
+}
+
+.section.section--dark {
+  background-color: #333;
+  color: white;
+}
+
+.section.section--dark .section__title,
+.section.section--dark .section__paragraph {
+  color: #e3e3e3;
+}
+
+.section.section--no-padding-bottom {
+  padding-bottom: 0;
 }
 
 .section.section--greeting .section__content {
@@ -131,7 +152,7 @@ em {
 .section .section__faq {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 32px;
   justify-items: stretch;
   margin-top: 16px;
 }
@@ -143,7 +164,7 @@ em {
 }
 
 .section .section__faq .faq__cell {
-  background-color: #efefef;
+  background-color: #4e4e4e;
   border-radius: 5px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -156,7 +177,7 @@ em {
 }
 
 .section .section__faq .faq__cell .cell__question {
-  background-color: #3e4f75;
+  background-color: #d43b00;
   border-radius: 5px 5px 0 0;
   color: white;
   font-weight: bold;
@@ -173,9 +194,9 @@ em {
 }
 
 .section .section__faq .faq__cell .cell__answer {
-  line-height: 1.4;
-  margin-bottom: 24px;
-  padding: 8px 16px;
+  color: white;
+  line-height: 1.6;
+  padding: 16px 32px;
 }
 
 @media screen and (max-width: 959px) {
@@ -189,8 +210,8 @@ em {
 .news {
   display: grid;
   gap: 32px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 32px;
 }
 
 @media screen and (max-width: 959px) {
@@ -200,7 +221,32 @@ em {
 }
 
 .news .news__item {
-  border-bottom: 3px solid #ec810c;
+  border-bottom: 3px solid #d43b00;
+  font-size: 16px;
   line-height: 1.4;
   padding-bottom: 16px;
+}
+
+.how-it-works {
+  display: flex;
+  gap: 64px;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.how-it-works .how-it-works__step {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  line-height: 1.6;
+}
+
+.how-it-works .how-it-works__step.how-it-works__step--active {
+  background-color: #333;
+  border: 1px dotted #333;
+  border-radius: 15px 15px 0 0;
+  color: white;
+  padding: 32px 8px 32px 8px;
+  text-align: center;
 }
