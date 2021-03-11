@@ -305,6 +305,12 @@ em {
 }
 
 @media screen and (max-width: 959px) {
+  .how-it-works .how-it-works__step .step__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 959px) {
   .how-it-works .how-it-works__step.how-it-works__step--hide-handset {
     display: none;
   }
@@ -320,6 +326,14 @@ em {
   display: flex;
   gap: 64px;
   margin-top: 32px;
+}
+
+@media screen and (max-width: 959px) {
+  .rate {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
 }
 
 .rate .rate__image {
@@ -339,4 +353,20 @@ em {
 
 .rate .rate__items .items__item {
   line-height: 1.4;
+}
+
+@media screen and (max-width: 959px) {
+  .rate .rate__items .items__item {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+.rate .rate__items .items__item {
+  line-height: 1.4;
+}
+
+.rate .rate__items .items__item .item__price {
+  color: #d43b00;
+  font-weight: bold;
 }
