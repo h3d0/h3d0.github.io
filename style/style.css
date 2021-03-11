@@ -6,6 +6,11 @@ body {
   padding: 0;
 }
 
+a {
+  color: rgb(0, 132, 255);
+  text-decoration: none;
+}
+
 strong {
   font-weight: bold;
 }
@@ -15,7 +20,7 @@ em {
 }
 
 .warning {
-  color: tomato;
+  color: #ec810c;
   text-transform: uppercase;
 }
 
@@ -29,7 +34,7 @@ em {
   position: relative;
 }
 
-.header__fade {
+.header .header__fade {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.35);
   height: 120px;
@@ -37,7 +42,7 @@ em {
   width: 100%;
 }
 
-.header__title {
+.header .header__title {
   bottom: -12px;
   color: white;
   font-size: 48px;
@@ -45,7 +50,7 @@ em {
   position: absolute;
 }
 
-.header__title .title__name {
+.header .header__title .title__name {
   font-size: 72px;
   font-weight: bold;
 }
@@ -60,7 +65,18 @@ em {
   }
 }
 
-.section__content {
+.section.section--greeting {
+  background-color: #e3e3e3;
+  font-size: 24px;
+  line-height: 1.4;
+  padding: 32px 0;
+}
+
+.section.section--greeting .section__content {
+  display: block;
+}
+
+.section .section__content {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -69,36 +85,36 @@ em {
 }
 
 @media screen and (max-width: 959px) {
-  .section__content {
+  .section .section__content {
     gap: 8px;
   }
 }
 
-.section__title {
+.section .section__title {
   color: rgb(92, 87, 87);
   font-size: 32px;
 }
 
 @media screen and (max-width: 959px) {
-  .section__title {
+  .section .section__title {
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
   }
 }
 
-.section__sub-title {
+.section .section__sub-title {
   color: #666;
   font-size: 22px;
 }
 
 @media screen and (max-width: 959px) {
-  .section__sub-title {
+  .section .section__sub-title {
     text-align: center;
   }
 }
 
-.section__paragraph {
+.section .section__paragraph {
   color: #666;
   font-size: 18px;
   line-height: 1.4;
@@ -107,12 +123,12 @@ em {
 }
 
 @media screen and (max-width: 959px) {
-  .section__paragraph {
+  .section .section__paragraph {
     padding: 8px 16px;
   }
 }
 
-.section__faq {
+.section .section__faq {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
@@ -121,25 +137,25 @@ em {
 }
 
 @media screen and (max-width: 959px) {
-  .section__faq {
+  .section .section__faq {
     grid-template-columns: 1fr;
   }
 }
 
-.section__faq .faq__cell {
+.section .section__faq .faq__cell {
   background-color: #efefef;
   border-radius: 5px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (max-width: 959px) {
-  .section__faq .faq__cell {
+  .section .section__faq .faq__cell {
     border-radius: 0;
     box-shadow: none;
   }
 }
 
-.section__faq .faq__cell .cell__question {
+.section .section__faq .faq__cell .cell__question {
   background-color: #3e4f75;
   border-radius: 5px 5px 0 0;
   color: white;
@@ -150,22 +166,41 @@ em {
 }
 
 @media screen and (max-width: 959px) {
-  .section__faq .faq__cell .cell__question {
+  .section .section__faq .faq__cell .cell__question {
     border-radius: 0;
     padding: 16px;
   }
 }
 
-.section__faq .faq__cell .cell__answer {
+.section .section__faq .faq__cell .cell__answer {
   line-height: 1.4;
   margin-bottom: 24px;
   padding: 8px 16px;
 }
 
 @media screen and (max-width: 959px) {
-  .section__faq .faq__cell .cell__answer {
+  .section .section__faq .faq__cell .cell__answer {
     line-height: 1.6;
     margin-bottom: 0;
     padding: 16px;
   }
+}
+
+.news {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 959px) {
+  .news {
+    grid-template-columns: 1fr;
+  }
+}
+
+.news .news__item {
+  border-bottom: 3px solid #ec810c;
+  line-height: 1.4;
+  padding-bottom: 16px;
 }
