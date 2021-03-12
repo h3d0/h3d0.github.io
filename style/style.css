@@ -284,6 +284,13 @@ em {
   }
 }
 
+.news .news__item .item__date {
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  padding-bottom: 16px;
+}
+
 .how-it-works {
   display: flex;
   gap: 64px;
