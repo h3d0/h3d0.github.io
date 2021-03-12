@@ -460,3 +460,7 @@ em {
     padding: 0 16px;
   }
 }
+
+.map {
+  border-radius: 10px;
+}
