@@ -75,6 +75,7 @@ em {
   font-size: 200px;
   font-weight: bold;
   position: absolute;
+  right: 5%;
 }
 
 .header {
@@ -428,4 +429,17 @@ em {
 .rate .rate__items .items__item .item__price {
   color: #d43b00;
   font-weight: bold;
+}
+
+.rate .rate__items .items__description {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.rate .rate__items .items__info {
+  line-height: 1.6;
+  padding: 16px 0;
 }
