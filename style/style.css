@@ -274,7 +274,7 @@ em {
   .how-it-works {
     flex-direction: column;
     gap: 16px;
-    padding: 0 16px;
+    padding: 0;
   }
 }
 
@@ -295,6 +295,12 @@ em {
   text-align: center;
 }
 
+@media screen and (max-width: 959px) {
+  .how-it-works .how-it-works__step.how-it-works__step--active {
+    border-radius: 0;
+  }
+}
+
 .how-it-works .how-it-works__step .step__image {
   border-radius: 100%;
 }
@@ -307,12 +313,8 @@ em {
 @media screen and (max-width: 959px) {
   .how-it-works .how-it-works__step .step__text {
     font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 959px) {
-  .how-it-works .how-it-works__step.how-it-works__step--hide-handset {
-    display: none;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
