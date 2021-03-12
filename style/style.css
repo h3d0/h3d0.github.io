@@ -179,15 +179,9 @@ em {
 .section .section__content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   margin: 0 auto;
   max-width: 1200px;
-}
-
-@media screen and (max-width: 959px) {
-  .section .section__content {
-    gap: 8px;
-  }
 }
 
 .section .section__title {
@@ -219,7 +213,7 @@ em {
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 16px;
-  margin-top: 24px;
+  margin-top: 16px;
 }
 
 @media screen and (max-width: 959px) {
@@ -233,7 +227,6 @@ em {
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   justify-items: stretch;
-  margin-top: 16px;
 }
 
 @media screen and (max-width: 959px) {
@@ -298,6 +291,7 @@ em {
 @media screen and (max-width: 959px) {
   .news {
     grid-template-columns: 1fr;
+    margin-top: 0;
     padding: 0 16px;
   }
 }
@@ -423,6 +417,7 @@ em {
   .rate .rate__items .items__item {
     font-size: 14px;
     line-height: 1.6;
+    padding: 8px;
   }
 }
 
