@@ -22,7 +22,6 @@ em {
 
 .warning {
   color: #d43b00;
-  text-transform: uppercase;
 }
 
 .info-text {
@@ -459,6 +458,12 @@ em {
   .rate .rate__items .items__info {
     padding: 0 16px;
   }
+}
+
+.rate-sum {
+  font-size: 64px;
+  padding: 16px 0;
+  text-align: center;
 }
 
 .map {
