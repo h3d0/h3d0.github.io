@@ -377,20 +377,23 @@ em {
 .rate {
   display: flex;
   gap: 64px;
-  margin-top: 32px;
 }
 
 @media screen and (max-width: 959px) {
   .rate {
     flex-direction: column;
     gap: 16px;
-    margin-top: 0;
-    padding: 0 16px;
   }
 }
 
 .rate .rate__image {
   flex-basis: 300px;
+}
+
+@media screen and (max-width: 959px) {
+  .rate .rate__image {
+    margin: 0 16px;
+  }
 }
 
 .rate .rate__items {
@@ -407,14 +410,16 @@ em {
   border: 1px solid #ccc;
   line-height: 1.4;
   margin-top: -1px;
-  padding: 4px 8px;
+  padding: 8px 16px;
 }
 
 @media screen and (max-width: 959px) {
   .rate .rate__items .items__item {
+    border-left: none;
+    border-right: none;
     font-size: 14px;
     line-height: 1.6;
-    padding: 8px;
+    padding: 8px 16px;
   }
 }
 
@@ -435,7 +440,23 @@ em {
   margin-top: 16px;
 }
 
+@media screen and (max-width: 959px) {
+  .rate .rate__items .items__description {
+    padding: 0 16px;
+  }
+}
+
+.rate .rate__items .items__description:first-child {
+  margin-top: 0;
+}
+
 .rate .rate__items .items__info {
   line-height: 1.6;
   padding: 16px 0;
+}
+
+@media screen and (max-width: 959px) {
+  .rate .rate__items .items__info {
+    padding: 0 16px;
+  }
 }
