@@ -586,3 +586,21 @@ em {
     padding: 0 16px;
   }
 }
+
+.docs {
+  display: flex;
+  gap: 16px;
+  list-style: circle;
+}
+
+.docs .docs__doc {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 959px) {
+  .docs {
+    padding: 0 16px 48px 16px;
+  }
+}
