@@ -604,3 +604,26 @@ em {
     padding: 0 16px 48px 16px;
   }
 }
+
+.footer {
+  background-color: #333;
+  color: white;
+  margin-top: 48px;
+}
+
+.footer .footer__content {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 959px) {
+  .footer .footer__content {
+    max-width: auto;
+    margin: auto;
+    padding: 16px;
+  }
+}
