@@ -78,6 +78,21 @@ em {
   right: 5%;
 }
 
+.fade {
+  background-color: #000000aa;
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.fade--visible {
+  display: block;
+}
+
 .header {
   background-color: #8891ae;
   background-image: url("/images/banner.jpg");
@@ -151,12 +166,25 @@ em {
 
 @media screen and (max-width: 959px) {
   .header__menu .menu__content {
-    padding: 16px;
+    padding: 8px 16px 8px 8px;
   }
 }
 
 .header__menu .menu__content .content__burger {
   display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .header__menu .menu__content .content__burger {
+    background-image: url("/svg/menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    border-radius: 100%;
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+  }
 }
 
 .header__menu .menu__content .content__items {
@@ -170,22 +198,47 @@ em {
   color: white;
 }
 
+@media screen and (max-width: 959px) {
+  .header__menu .menu__content .content__items {
+    align-items: flex-start;
+    background-color: white;
+    bottom: 0;
+    flex-direction: column;
+    display: none;
+    top: 0;
+    left: 0;
+    padding: 32px 16px;
+    position: fixed;
+    right: 64px;
+    z-index: 3;
+  }
+
+  .header__menu .menu__content .content__items--expanded {
+    display: flex;
+  }
+
+  .header__menu .menu__content .content__items .items__item {
+    color: #333;
+    text-transform: uppercase;
+  }
+}
+
 .header__menu .menu__content .content__items .items__item:hover {
   text-decoration: underline;
 }
 
-.header__menu .menu__content .items__languages {
+.header__menu .menu__content .content__languages {
   display: flex;
   flex-grow: 2;
   gap: 16px;
   justify-content: flex-end;
 }
 
-.header__menu .menu__content .items__languages .languages__language {
+.header__menu .menu__content .content__languages .languages__language {
   color: white;
 }
 
-.header__menu .menu__content .items__languages .languages__language--active {
+.header__menu .menu__content .languages__language--active {
   text-decoration: underline;
 }
 
@@ -207,26 +260,26 @@ em {
   padding: 32px 0;
 }
 
-.section.section--dark {
+.section--dark {
   background-color: #333;
   color: white;
 }
 
-.section.section--dark .section__title,
-.section.section--dark .section__paragraph {
+.section--dark .section__title,
+.section--dark .section__paragraph {
   color: #e3e3e3;
 }
 
-.section.section--no-padding-bottom {
+.section--no-padding-bottom {
   padding-bottom: 0;
 }
 
-.section.section--greeting .section__content {
+.section--greeting .section__content {
   display: block;
 }
 
 @media screen and (max-width: 959px) {
-  .section.section--greeting .section__content {
+  .section--greeting .section__content {
     font-size: 22px;
     padding: 0 16px;
   }
@@ -267,7 +320,7 @@ em {
   margin-top: 16px;
 }
 
-.section .section__paragraph.section__paragraph--no-padding {
+.section .section__paragraph--no-padding {
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -396,7 +449,7 @@ em {
   line-height: 1.6;
 }
 
-.how-it-works .how-it-works__step.how-it-works__step--active {
+.how-it-works .how-it-works__step--active {
   background-color: #333;
   border: 1px dotted #333;
   border-radius: 15px 15px 0 0;
@@ -406,7 +459,7 @@ em {
 }
 
 @media screen and (max-width: 959px) {
-  .how-it-works .how-it-works__step.how-it-works__step--active {
+  .how-it-works .how-it-works__step--active {
     border-radius: 0;
   }
 }
@@ -612,7 +665,7 @@ em {
   content: "►";
 }
 
-.faq .faq__question.faq__question--expanded::before {
+.faq .faq__question--expanded::before {
   content: "▼";
 }
 
@@ -631,7 +684,7 @@ em {
   visibility: hidden;
 }
 
-.faq .faq__answer.faq__answer--expanded {
+.faq .faq__answer--expanded {
   max-height: 500px;
   opacity: 1;
   transition: visibility 0s linear 0s, opacity 300ms, max-height 300ms;
@@ -715,4 +768,11 @@ em {
   position: fixed;
   right: calc(50% - 600px);
   width: 64px;
+}
+
+@media screen and (max-width: 959px) {
+  .scroll-top {
+    bottom: 16px;
+    right: 16px;
+  }
 }
