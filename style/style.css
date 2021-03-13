@@ -101,7 +101,7 @@ em {
 
 .header .header__fade {
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background: linear-gradient(#00000000, #00000066);;
   height: 120px;
   position: absolute;
   width: 100%;
@@ -132,6 +132,41 @@ em {
   .header .header__title .title__name {
     font-size: 36px;
   }
+}
+
+.header__menu {
+  background-color: #153152;
+  color: white;
+}
+
+.header__menu .menu__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+@media screen and (max-width: 959px) {
+  .header__menu .menu__content {
+    padding: 16px;
+  }
+}
+
+.header__menu .menu__content .content__items {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.header__menu .menu__content .content__items .items__item {
+  color: white;
+}
+
+.header__menu .menu__content .content__items .items__item--active {
+  color: white;
+  text-decoration: underline;
 }
 
 .section {
