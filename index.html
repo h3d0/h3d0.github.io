@@ -14,14 +14,21 @@
 </head>
 
 <body>
-  <header class="header">
+  <header id="top" class="header">
     <div class="header__fade"></div>
     <div class="header__menu">
       <div class="menu__content">
         <div class="content__burger"></div>
         <div class="content__items">
-          <a href="/" class="items__item">UA</a>
-          <a href="/" class="items__item items__item--active">RU</a>
+          <a href="#section_news" class="items__item">Новости</a>
+          <a href="#section_osbb" class="items__item">ОСББ, УК от застройщика</a>
+          <a href="#section_rates" class="items__item">Тарифы</a>
+          <a href="#section_faq" class="items__item">Вопросы</a>
+          <a href="#section_docs" class="items__item">Документы</a>
+          <div class="items__languages">
+            <a href="/" class="languages__language">UA</a>
+            <a href="/" class="languages__language languages__language--active">RU</a>
+          </div>
         </div>
       </div>
     </div>
@@ -38,7 +45,7 @@
       <a href="https://t.me/Timezk" target="_blank">Телеграм ЖК "Time"</a>.
     </div>
   </section>
-  <section class="section">
+  <section id="section_news" class="section">
     <div class="section__content">
       <h2 class="section__title">
         Последние новости
@@ -114,7 +121,7 @@
       </ul>
     </div>
   </section>
-  <section class="section section--dark">
+  <section id="section_osbb" class="section section--dark">
     <div class="section__content">
       <h2 class="section__title">
         ОСББ и Управляющая Компания от Bud
@@ -165,7 +172,7 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section id="section_rates" class="section">
     <div class="section__content">
       <h2 class="section__title">
         Тарифы
@@ -393,7 +400,7 @@
       </ul>
     </div>
   </section>
-  <section class="section">
+  <section id="section_faq" class="section">
     <div class="section__content">
       <h2 class="section__title">
         Часто задаваемые вопросы
@@ -427,7 +434,7 @@
       </dl>
     </div>
   </section>
-  <section class="section">
+  <section id="section_docs" class="section">
     <div class="section__content">
       <h2 class="section__title">
         Документы
@@ -456,6 +463,7 @@
       <span>Клуб инвесторов ЖК "Time". Все права защищены. 2021</span>
     </div>
   </footer>
+  <a href="#top" class="scroll-top"></a>
 </body>
 
 </html>
