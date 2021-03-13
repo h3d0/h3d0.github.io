@@ -507,6 +507,9 @@ em {
 
 @media screen and (max-width: 959px) {
   .rate .rate__image {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     margin: 0 16px;
   }
 }
