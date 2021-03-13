@@ -544,6 +544,7 @@ em {
 
 .faq .faq__question {
   background-color: #0171ce;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
   line-height: 1.4;
@@ -612,7 +613,9 @@ em {
 }
 
 .footer .footer__content {
+  display: flex;
   font-size: 14px;
+  justify-content: space-between;
   line-height: 1.6;
   max-width: 1200px;
   margin: 0 auto;
@@ -622,8 +625,23 @@ em {
 
 @media screen and (max-width: 959px) {
   .footer .footer__content {
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
     max-width: auto;
     margin: auto;
     padding: 16px;
   }
+}
+
+.footer .footer__content .content__link {
+  align-items: center;
+  color: #20a0e1;
+  display: flex;
+  gap: 8px;
+}
+
+.footer .footer__content .content__logo {
+  height: 16px;
+  width: 16px;
 }
