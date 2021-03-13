@@ -135,6 +135,7 @@ em {
 }
 
 .section {
+  content-visibility: auto;
   padding: 48px 0;
 }
 
