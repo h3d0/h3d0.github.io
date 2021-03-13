@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible"
-    content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клуб инвесторов ЖК "Time"</title>
+  <link rel="preload" href="style/reset.css" as="style">
+  <link rel="preload" href="style/style.css" as="style">
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/style.css">
-  <script src="scripts/logic.js"></script>
+  <script defer src="scripts/logic.js"></script>
 </head>
 
 <body>
@@ -66,7 +66,7 @@
       <ul class="how-it-works">
         <li class="how-it-works__step">
           <img src="images/how-it-works/contract.jpg" alt="" class="step__image"
-            height="200" width="200">
+            height="200" width="200" loading="lazy">
           <div class="step__text">
             <span class="step__num">1.</span>
             Инвестор платит деньги фонду и получает <strong>договор</strong>. По этому
@@ -76,7 +76,7 @@
         </li>
         <li class="how-it-works__step">
           <img src="images/how-it-works/build.jpg" alt="" class="step__image"
-            height="200" width="200">
+            height="200" width="200" loading="lazy">
           <div class="step__text">
             <span class="step__num">2.</span>
             Застройщик строит объект, выполняет все процедуры и вводит объект в
@@ -94,7 +94,7 @@
         </li>
         <li class="how-it-works__step">
           <img src="images/how-it-works/keys.jpg" alt="" class="step__image"
-            height="200" width="200">
+            height="200" width="200" loading="lazy">
           <div class="step__text">
             <span class="step__num">4.</span>
             Инвесторам не остаётся ничего, кроме как подписать договор, получить право
@@ -171,7 +171,8 @@
       </h3>
       <div class="rate">
         <div class="rate__image">
-          <img src="images/rate/appartment.jpg" alt="" height="250" width="300">
+          <img src="images/rate/appartment.jpg" alt="" height="250" width="300"
+            loading="lazy">
           <div class="warning-box">
             <span>При предложенном УК застройщика тарифе квартира площадью, например 84м2,
               будет платить в месяц: 17.32грн * 84м2 = <strong>1454.88грн</strong>.</span>
@@ -263,8 +264,7 @@
       </h3>
       <div class="rate">
         <div class="rate__image">
-          <img src="images/rate/guard.jpg" alt=""
-            height="250" width="300">
+          <img src="images/rate/guard.jpg" alt="" height="250" width="300" loading="lazy">
           <div class="warning-box">
             <span>В случае утверждения, квартира площадью 84м2, будет платить в месяц:
               8.90грн (либо 6.50грн) * 84м2 = <strong>747.60грн</strong> (либо
@@ -301,7 +301,7 @@
       </h3>
       <div class="rate">
         <img src="images/rate/parking.jpg" alt="" class="rate__image"
-          height="250" width="300">
+          height="250" width="300" loading="lazy">
         <ul class="rate__items">
           <li class="items__item">
             <span class="item__price">X.XX грн</span> - Статья содержание паркинга.
@@ -313,7 +313,7 @@
       </h3>
       <div class="rate">
         <img src="images/rate/storehouse.jpg" alt="" class="rate__image"
-          height="250" width="300">
+          height="250" width="300" loading="lazy">
         <ul class="rate__items rate__items--reversed">
           <li class="items__item">
             <span class="item__price">X.XX грн</span> - Статья содержание кладовой.
@@ -350,32 +350,33 @@
       <h2 class="section__title">
         Тарифы в соседних ЖК Соломенского района
       </h2>
-      <img src="images/rate/map.jpg" class="map" alt="" height="668" width="1200">
+      <img src="images/rate/map.jpg" class="map" alt="" height="668" width="1200"
+        loading="lazy">
       <ul class="rate-map-items">
         <li class="rate-map-items__item">
           <img src="images/rate/adamant.jpg" class="item__image" alt=""
-            height="300" width="300">
+            height="300" width="300" loading="lazy">
           <div class="item__text">
             Адамант: <strong>13грн</strong>/м2 + 250грн охрана
           </div>
         </li>
         <li class="rate-map-items__item">
           <img src="images/rate/malahit.jpg" class="item__image" alt=""
-            height="300" width="300">
+            height="300" width="300" loading="lazy">
           <div class="item__text">
             Малахит: <strong>14грн</strong>/м2 + 250грн охрана
           </div>
         </li>
         <li class="rate-map-items__item">
           <img src="images/rate/kvartet.jpg" class="item__image" alt=""
-            height="300" width="300">
+            height="300" width="300" loading="lazy">
           <div class="item__text">
             Квартет: <strong>15грн</strong>/м2 + 250грн охрана
           </div>
         </li>
         <li class="rate-map-items__item">
           <img src="images/rate/sherwood.jpg" class="item__image" alt=""
-            height="300" width="300">
+            height="300" width="300" loading="lazy">
           <div class="item__text">
             Шервуд: <strong>15грн</strong>/м2 + 250грн охрана
           </div>
@@ -438,7 +439,8 @@
       <span>
         <a href="https://web.telegram.org/#/im?p=@Timezk" target="_blank"
           class="content__link">
-          <img src="svg/telegram.svg" class="content__logo" alt="Логотип Telegram">
+          <img src="svg/telegram.svg" class="content__logo" alt="Логотип Telegram"
+            loading="lazy">
           ЖК "Time"
         </a>
       </span>
