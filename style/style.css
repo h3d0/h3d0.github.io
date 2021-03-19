@@ -708,6 +708,24 @@ em {
   }
 }
 
+.docs__columns {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 959px) {
+  .docs__columns {
+    flex-direction: column;
+  }
+}
+
+.docs__columns .columns__column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .docs {
   display: flex;
   flex-direction: column;
@@ -723,7 +741,7 @@ em {
 
 @media screen and (max-width: 959px) {
   .docs {
-    padding: 0 16px 48px 16px;
+    padding: 0 16px;
   }
 }
 
